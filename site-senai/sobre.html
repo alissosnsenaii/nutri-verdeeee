@@ -60,7 +60,9 @@
         }
         h1{
             text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
-            text-decoration:  ;
+            text-align: center;
+            animation: fadeInOut 4s ease infinite; /* 4 segundos de animação, loop infinito */
+            
         }
 
         .oi {
@@ -76,6 +78,14 @@
            height: max-content;
            width: 79%;
 
+        }
+        @keyframes fadeInOut {
+            0%, 100% {
+                opacity: 0; /* Início e fim: texto totalmente transparente (oculto) */
+            }
+            50% {
+                opacity: 1; /* Meio da animação: texto totalmente visível */
+            }
         }
     </style>
 
