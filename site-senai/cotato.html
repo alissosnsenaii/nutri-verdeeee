@@ -31,34 +31,38 @@
         form {
             max-width: 350px;
             margin: 100px auto;
-            background-color: #ffffff33;
+            background-color: #ffffff41;
             padding: 30px;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.679);
+            box-shadow: 0 0 10px rgb(9, 109, 4);
         }
 
         h1 {
             font-size: 18px;
-            margin-bottom: 0px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin-bottom: 5px;
+            color: #066f0b;
 
         }
 
         input[type="text"],
         textarea {
+            
             width: 90%;
             padding: 10px;
             margin-bottom: 9px;
-            border: 1px solid #cccccca7;
+            border: 2px solid #06580f;
             border-radius: 4px;
         }
 
         textarea {
             height: 90px;
+
         }
 
         input[type="submit"] {
             background-color: #066f0b;
-            color: #fff;
+            color: #ffffff;
             padding: 10px 20px;
             border: none;
             border-radius: 3px;
@@ -76,7 +80,7 @@
 
         /* --------------------------------------- */
         .oi {
-            background-color: rgba(0, 100, 0, 0.6);
+            background-color: rgba(0, 100, 0, 0);
             position: absolute;
             width: 100%;
             /* Ocupa toda a largura */
@@ -86,17 +90,17 @@
             /* Valor maior para ficar na frente */
         }
 
-        .um {
-            width: 100vw;
-            height: 100vh;
-            background-image: url(./ft2.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            display: flex;
-            position: absolute;
-            z-index: 1;
-            /* Valor menor para ficar atrás da "oi" */
+
+        .navbar {
+            background-color: rgb(255, 255, 255) !important;
+            padding-bottom: 20px;
         }
+        .ctt{
+             
+            font-size: xx-large;
+          
+        }
+
     </style>
 
 
@@ -105,8 +109,50 @@
 </head>
 
 <body class=".container-fluid">
+     
+    
 
     <div class="oi">
+        <section class="section page-header">
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="sobreee.html"> Saiba+</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="cotato.html">Contato</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </section>
+        
+        <section class="page-logo">
+            <nav class="navbar bg-body-tertiary">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Bootstrap" width="30" height="24">
+                    </a>
+                </div>
+            </nav>
+            
+        </section>
+
+        <h1 class="ctt" style="text-align: center; ">CONTATO</h1>
+
         <form action="https://api.staticforms.xyz/submit" method="post">
             <!-- Replace with accessKey sent to your email -->
             <input type="hidden" name="accessKey" value="bc4c36ec-5803-4148-b67b-b87591c6b5c9"> <!-- Required -->
