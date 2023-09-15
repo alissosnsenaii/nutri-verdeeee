@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contato</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="favi/favicon.ico" type="image/x-icon">
+
+    <style>
+        .whats {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            z-index: 9999;
+            padding: 10px 10px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: 0;
+        }
+
+        form {
+            max-width: 350px;
+            margin: 100px auto;
+            background-color: #ffffff33;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.679);
+        }
+
+        h1 {
+            font-size: 18px;
+            margin-bottom: 0px;
+
+        }
+
+        input[type="text"],
+        textarea {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 9px;
+            border: 1px solid #cccccca7;
+            border-radius: 4px;
+        }
+
+        textarea {
+            height: 90px;
+        }
+
+        input[type="submit"] {
+            background-color: #066f0b;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        input[type="enviar"]:hover {
+            background-color: #0079fab4;
+        }
+
+        body {
+            display: flex;
+
+        }
+
+        /* --------------------------------------- */
+        .oi {
+            background-color: rgba(0, 100, 0, 0.6);
+            position: absolute;
+            width: 100%;
+            /* Ocupa toda a largura */
+            height: 100%;
+            /* Ocupa toda a altura */
+            z-index: 2;
+            /* Valor maior para ficar na frente */
+        }
+
+        .um {
+            width: 100vw;
+            height: 100vh;
+            background-image: url(./ft2.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            position: absolute;
+            z-index: 1;
+            /* Valor menor para ficar atrás da "oi" */
+        }
+    </style>
+
+
+
+
+</head>
+
+<body class=".container-fluid">
+
+    <div class="oi">
+        <form action="https://api.staticforms.xyz/submit" method="post">
+            <!-- Replace with accessKey sent to your email -->
+            <input type="hidden" name="accessKey" value="bc4c36ec-5803-4148-b67b-b87591c6b5c9"> <!-- Required -->
+          
+            <h1>Seu Nome</h1>
+            <input type="text" name="name"> <!-- Optional -->
+    
+            
+    
+    
+            <h1> Sua Mensagem</h1>
+            <textarea name="message"></textarea> <!-- Optional -->
+            
+            <!-- If you want replyTo to be set to a specific email -->
+            <input type="text" name="replyTo" value="alissonfragoso123@gmail.com"> <!-- Optional -->
+            <!-- Specify @ as reply to value if you want it to be the customer's email -->
+            <input type="hidden" name="replyTo" value="@"> <!-- Optional -->
+            <!-- If you want the form to redirect to a specific URL after submission -->
+            <input type="hidden" name="redirectTo" value="https://example.com/contact/success"> <!-- Optional -->
+            <input type="submit" value=" enviar" />
+        </form>
+
+      
+    </div>
+    <div class="um">
+    </div>
+
+
+   
+
+    </div>
+
+</html>
