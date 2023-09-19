@@ -33,7 +33,7 @@
 
         h1 {
             font-size: 18px;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
+           
             margin-bottom: 5px;
             color: #066f0b;
 
@@ -63,7 +63,7 @@
             cursor: pointer;
         }
 
-        input[type="enviar"]:hover {
+        input[type="submit"]:hover {
             background-color: #0079fab4;
         }
 
@@ -161,16 +161,25 @@
             
     
     
-            <textarea name="message"  placeholder="Escreva sua Duvida aqui"></textarea> <!-- Optional -->
+            <textarea name="message"  placeholder="Assunto"></textarea> <!-- Optional -->
             <!-- If you want replyTo to be set to a specific email -->
-            <input type="text" name="replyTo" value="alissonfragoso123@gmail.com" > <!-- Optional -->
+            <input type="hidden" name="replyTo" value="alissonfragoso123@gmail.com" > <!-- Optional -->
             <!-- Specify @ as reply to value if you want it to be the customer's email -->
             <input type="hidden" name="replyTo" value="@"> <!-- Optional -->
             <!-- If you want the form to redirect to a specific URL after submission -->
             <input type="hidden" name="redirectTo" value="https://example.com/contact/success"> <!-- Optional -->
             <input type="submit" value=" enviar" />
         </form>
+
+        <script>
+            document.getElementById("meuForm").onsubmit = function() {
+                alert("Formulário enviado com sucesso!");
+                window.location.href = "https://seusite.com/pagina-de-sucesso.html";
+                return false; // Isso impede o envio padrão do formulário
+            };
+        </script>
         
+    </script>
         
     </div>
     <div class="um">
