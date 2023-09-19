@@ -64,6 +64,7 @@
         }
 
         input[type="submit"]:hover {
+            
             background-color: #0079fab4;
         }
 
@@ -147,37 +148,29 @@
 
         <h1 class="ctt" style="text-align: center; ">CONTATO</h1>
 
-        <form action="https://api.staticforms.xyz/submit" method="post" id="meuForm">
-            <!-- Replace with accessKey sent to your email -->
-            <input type="hidden" name="accessKey" value="bc4c36ec-5803-4148-b67b-b87591c6b5c9"> <!-- Required -->
-          
-            <!-- <h1>Seu Nome</h1> -->
-            <input type="text" name="name" placeholder="Nome"> <!-- Optional -->
-
-            <input type="text" name="email" placeholder="Email" />
-
-            <input type="text" name="phone" placeholder="Telefone">
-    
+        <div id="meuForm">
+            <form action="https://api.staticforms.xyz/submit" method="post" >
+                <!-- Replace with accessKey sent to your email -->
+                <input type="hidden" name="accessKey" value="bc4c36ec-5803-4148-b67b-b87591c6b5c9"> <!-- Required -->
             
-    
-    
-            <textarea name="message"  placeholder="Assunto"></textarea> <!-- Optional -->
-            <!-- If you want replyTo to be set to a specific email -->
-            <input type="hidden" name="replyTo" value=""> <!-- Optional -->
-            <!-- Specify @ as reply to value if you want it to be the customer's email -->
-            <input type="hidden" name="replyTo" value="@"> <!-- Optional -->
-            <!-- If you want the form to redirect to a specific URL after submission -->
-            <input type="hidden" name="redirectTo" value="https://example.com/contact/success"> <!-- Optional -->
-            <input type="submit" value=" enviar" />
-        </form>
+                <!-- <h1>Seu Nome</h1> -->
+                <input type="text" name="name" placeholder="Nome"> <!-- Optional -->
+                <input type="text" name="email" placeholder="Email" />
+                <input type="text" name="phone" placeholder="Telefone">
+            
+                <textarea name="message"  placeholder="Assunto"></textarea> <!-- Optional -->
+                <!-- If you want replyTo to be set to a specific email -->
+                <input type="hidden" name="replyTo" value="itachiziimf@gmail.com"> <!-- Optional -->
+                <!-- Specify @ as reply to value if you want it to be the customer's email -->
+                <input type="hidden" name="replyTo" value="@"> <!-- Optional -->
+                <!-- If you want the form to redirect to a specific URL after submission -->
+                <input type="hidden" name="redirectTo" value="https://example.com/contact/success"> <!-- Optional -->
+                <input type="submit" value="enviar" />
+                
+            </form>
+        </div>
 
-        <script>
-            document.getElementById("meuForm").onsubmit = function() {
-                alert("Formulário enviado com sucesso!");
-                window.location.href = "https://example.com/contact/success";
-                return false; // Isso impede o envio padrão do formulário
-            };
-        </script>
+    
         
     </script>
         
@@ -191,4 +184,4 @@
     </div>
     
     </html>
-    
+    alert("Formulário enviado com sucesso!");
