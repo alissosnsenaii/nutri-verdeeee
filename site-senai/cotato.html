@@ -147,7 +147,7 @@
 
         <h1 class="ctt" style="text-align: center; ">CONTATO</h1>
 
-        <form action="https://api.staticforms.xyz/submit" method="post">
+        <form action="https://api.staticforms.xyz/submit" method="post" id="meuForm">
             <!-- Replace with accessKey sent to your email -->
             <input type="hidden" name="accessKey" value="bc4c36ec-5803-4148-b67b-b87591c6b5c9"> <!-- Required -->
           
@@ -163,7 +163,7 @@
     
             <textarea name="message"  placeholder="Assunto"></textarea> <!-- Optional -->
             <!-- If you want replyTo to be set to a specific email -->
-            <input type="hidden" name="replyTo" value="alissonfragoso123@gmail.com" > <!-- Optional -->
+            <input type="hidden" name="replyTo" value=""> <!-- Optional -->
             <!-- Specify @ as reply to value if you want it to be the customer's email -->
             <input type="hidden" name="replyTo" value="@"> <!-- Optional -->
             <!-- If you want the form to redirect to a specific URL after submission -->
@@ -174,7 +174,7 @@
         <script>
             document.getElementById("meuForm").onsubmit = function() {
                 alert("Formulário enviado com sucesso!");
-                window.location.href = "https://seusite.com/pagina-de-sucesso.html";
+                window.location.href = "https://example.com/contact/success";
                 return false; // Isso impede o envio padrão do formulário
             };
         </script>
