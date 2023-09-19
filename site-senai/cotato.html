@@ -14,13 +14,7 @@
     <link rel="shortcut icon" href="favi/favicon.ico" type="image/x-icon">
 
     <style>
-        .whats {
-            position: fixed;
-            bottom: 10px;
-            right: 10px;
-            z-index: 9999;
-            padding: 10px 10px;
-        }
+        
 
         * {
             margin: 0;
@@ -30,7 +24,7 @@
 
         form {
             max-width: 350px;
-            margin: 100px auto;
+            margin: 10px auto;
             background-color: #ffffff41;
             padding: 30px;
             border-radius: 10px;
@@ -157,32 +151,35 @@
             <!-- Replace with accessKey sent to your email -->
             <input type="hidden" name="accessKey" value="bc4c36ec-5803-4148-b67b-b87591c6b5c9"> <!-- Required -->
           
-            <h1>Seu Nome</h1>
-            <input type="text" name="name"> <!-- Optional -->
+            <!-- <h1>Seu Nome</h1> -->
+            <input type="text" name="name" placeholder="Nome"> <!-- Optional -->
+
+            <input type="text" name="email" placeholder="Email" />
+
+            <input type="text" name="phone" placeholder="Telefone">
     
             
     
     
-            <h1> Sua Mensagem</h1>
-            <textarea name="message"></textarea> <!-- Optional -->
-            
+            <textarea name="message"  placeholder="Escreva sua Duvida aqui"></textarea> <!-- Optional -->
             <!-- If you want replyTo to be set to a specific email -->
-            <input type="text" name="replyTo" value="alissonfragoso123@gmail.com"> <!-- Optional -->
+            <input type="text" name="replyTo" value="alissonfragoso123@gmail.com" > <!-- Optional -->
             <!-- Specify @ as reply to value if you want it to be the customer's email -->
             <input type="hidden" name="replyTo" value="@"> <!-- Optional -->
             <!-- If you want the form to redirect to a specific URL after submission -->
             <input type="hidden" name="redirectTo" value="https://example.com/contact/success"> <!-- Optional -->
             <input type="submit" value=" enviar" />
         </form>
-
-      
+        
+        
     </div>
     <div class="um">
     </div>
-
-
-   
-
+    
+    
+    
+    
     </div>
-
-</html>
+    
+    </html>
+    
