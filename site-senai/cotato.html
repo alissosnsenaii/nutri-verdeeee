@@ -104,6 +104,10 @@
             font-size: xx-large;
 
         }
+
+        
+        
+        
     </style>
 
 
@@ -153,37 +157,38 @@
         </section>
         <!-- ----------------------------header---------------------------------------------- -->
         <div class="body2">
+           
 
             <h1 class="ctt" style="text-align: center; font-family: Arial, Helvetica, sans-serif;">
-                <svg
-                    xmlns="http://www.w3.org/2000/svg" width="40" height="95" fill="currentColor"
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="95" fill="currentColor"
                     class="bi bi-person-lines-fill" viewBox="0 0 16 16">
                     <path
                         d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2z" />
                 </svg>
-                CONTATO</h1>
+                CONTATO
+            </h1>
 
-            <form action="https://api.staticforms.xyz/submit" method="post">
-                <!-- Replace with accessKey sent to your email -->
-                <input type="hidden" name="accessKey" value="bc4c36ec-5803-4148-b67b-b87591c6b5c9"> <!-- Required -->
+           
+                <form action="https://api.staticforms.xyz/submit" method="post">
+                    <!-- Replace with accessKey sent to your email -->
+                    <input type="hidden" name="accessKey" value="bc4c36ec-5803-4148-b67b-b87591c6b5c9"> <!-- Required -->
+                    <!-- <h1>Seu Nome</h1> -->
+                    <input type="text" name="name" placeholder="Nome"> <!-- Optional -->
+                    <input type="text" name="email" placeholder="Email" />
+                    <input type="text" name="phone" placeholder="Telefone">
+                    <textarea name="message" placeholder="Assunto"></textarea> <!-- Optional -->
+                    <!-- If you want replyTo to be set to a specific email -->
+                    <input type="hidden" name="replyTo" value="itachiziimf@gmail.com"> <!-- Optional -->
+                    <!-- Specify @ as reply to value if you want it to be the customer's email -->
+                    <input type="hidden" name="replyTo" value="@"> <!-- Optional -->
+                    <!-- If you want the form to redirect to a specific URL after submission -->
+                    <input type="hidden" name="redirectTo"
+                        value="http://127.0.0.1:5500/site-senai/cotato.html"><!-- Optional -->
+                    <input type="submit" value="enviar" onclick="meu()" />
+                </form>
+            
+            
 
-                <!-- <h1>Seu Nome</h1> -->
-                <input type="text" name="name" placeholder="Nome"> <!-- Optional -->
-                <input type="text" name="email" placeholder="Email" />
-                <input type="text" name="phone" placeholder="Telefone">
-
-                <textarea name="message" placeholder="Assunto"></textarea> <!-- Optional -->
-                <!-- If you want replyTo to be set to a specific email -->
-                <input type="hidden" name="replyTo" value="itachiziimf@gmail.com"> <!-- Optional -->
-                <!-- Specify @ as reply to value if you want it to be the customer's email -->
-                <input type="hidden" name="replyTo" value="@"> <!-- Optional -->
-                <!-- If you want the form to redirect to a specific URL after submission -->
-                <input type="hidden" name="redirectTo"
-                    value="http://127.0.0.1:5500/site-senai/cotato.html"><!-- Optional -->
-
-                <input type="submit" value="enviar" onclick="meu()" />
-
-            </form>
             <script>
                 function meu() {
                     alert("Formulário enviado com sucesso!");
@@ -192,45 +197,51 @@
 
                 };
             </script>
+
+
+
+
         </div>
+
+
         <!-- ----------------------- footer---------------------------------- -->
         <div class="container">
             <div class="row">
                 <div class="col-lg-4">
                     <section class="widget">
                         <h3 class="widget-title">Atendimento</h3>
-    
+
                         <p>
                             <i class="icon-phone"></i>
                             (28) 99936-1170
                         </p>
-    
+
                         <p class="no-print">
                             <i class="fab fa-whatsapp"></i>
                             <a href="https://api.whatsapp.com/send?phone=5528999361170" target="_blank"
                                 style="color: #229A00;">(28) 99936-1170</a>
                         </p>
-    
-    
+
+
                         <p>
                             <i class="icon-mail"></i>
                             <a class="text-dark" href="mailto:folhaverdenfe@gmail.com"
                                 style="color: #229A00;">folhaverdenfe@gmail.com</a>
                         </p>
-    
-    
+
+
                         <p>
                             <i class="icon-clock"></i>
                             Horário de Atendimento:
                         </p>
-    
+
                         <ul class="list-unstyled text-sm" style="margin-left: 30px;">
                             <li>
                                 <p>Segunda-Sexta: 08:00 - 18:00<br>
                                     Sábado: 08:30 - 18:00</p>
                             </li>
                         </ul>
-    
+
                     </section>
                 </div>
                 <div class="col-lg-4 col-md-6">
@@ -258,16 +269,16 @@
                         </ul>
                     </section>
                 </div>
-    
+
             </div>
-    
-    
+
+
         </div>
-      
-        
+
+
 
     </div>
- 
+
 
 
 </html>
@@ -313,25 +324,24 @@
                 <h3 class="widget-title">Links</h>
 
                     <!-- Add the"Rede Sociais" section here with horizontal alignment -->
-        <div class="col-lg-4 col-md-6">
-            <section class="widget widget-links widget-footer-links">
-                <h3 class="widget-title">Rede Sociais</h3>
-                <ul class="foot-social" style="list-style: none; padding: 0; display: flex; ">
-                    <li>
-                        <a href="https://www.instagram.com/relvaverde/?hl=pt-br" target="_blank"
-                            title="Relva Verde no Instagram">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.facebook.com/lojarelvaverde/" target="_blank"
-                            title="Fan Page da Relva Verde">
-                            <i class="fab fa-facebook"></i>
-                        </a>
-                    </li>
+<div class="col-lg-4 col-md-6">
+    <section class="widget widget-links widget-footer-links">
+        <h3 class="widget-title">Rede Sociais</h3>
+        <ul class="foot-social" style="list-style: none; padding: 0; display: flex; ">
+            <li>
+                <a href="https://www.instagram.com/relvaverde/?hl=pt-br" target="_blank"
+                    title="Relva Verde no Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/lojarelvaverde/" target="_blank" title="Fan Page da Relva Verde">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </li>
 
-                </ul>
-            </section>
-        </div>
-    </div>
+        </ul>
+    </section>
+</div>
+</div>
 </div> -->
