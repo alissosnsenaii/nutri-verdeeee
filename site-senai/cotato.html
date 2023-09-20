@@ -67,9 +67,16 @@
         }
 
         body {
-            background-color: #f8f8f8;
+           
             display: flex;
 
+        }
+        .body2{
+            background-color: #f8f8f8;
+            height: 100% auto;
+            margin: 20px;
+            padding: 22px ;
+            border-radius: 10px;
         }
 
         /* --------------------------------------- */
@@ -143,37 +150,39 @@
             </nav>
 
         </section>
-
-        <h1 class="ctt" style="text-align: center; font-family: Arial, Helvetica, sans-serif;">CONTATO</h1>
-
-        <form action="https://api.staticforms.xyz/submit" method="post">
-            <!-- Replace with accessKey sent to your email -->
-            <input type="hidden" name="accessKey" value="bc4c36ec-5803-4148-b67b-b87591c6b5c9"> <!-- Required -->
-
-            <!-- <h1>Seu Nome</h1> -->
-            <input type="text" name="name" placeholder="Nome"> <!-- Optional -->
-            <input type="text" name="email" placeholder="Email" />
-            <input type="text" name="phone" placeholder="Telefone">
-
-            <textarea name="message" placeholder="Assunto"></textarea> <!-- Optional -->
-            <!-- If you want replyTo to be set to a specific email -->
-            <input type="hidden" name="replyTo" value="itachiziimf@gmail.com"> <!-- Optional -->
-            <!-- Specify @ as reply to value if you want it to be the customer's email -->
-            <input type="hidden" name="replyTo" value="@"> <!-- Optional -->
-            <!-- If you want the form to redirect to a specific URL after submission -->
-            <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/site-senai/cotato.html"><!-- Optional -->
-
-            <input type="submit" value="enviar" onclick="meu()" />
-
-        </form>
-        <script>
-            function meu() {
-                alert("Formulário enviado com sucesso!");
-                ;
-                return false;
-
-            };
-        </script>
+<div class="body2">
+    
+            <h1 class="ctt" style="text-align: center; font-family: Arial, Helvetica, sans-serif;">CONTATO</h1>
+    
+            <form action="https://api.staticforms.xyz/submit" method="post">
+                <!-- Replace with accessKey sent to your email -->
+                <input type="hidden" name="accessKey" value="bc4c36ec-5803-4148-b67b-b87591c6b5c9"> <!-- Required -->
+    
+                <!-- <h1>Seu Nome</h1> -->
+                <input type="text" name="name" placeholder="Nome"> <!-- Optional -->
+                <input type="text" name="email" placeholder="Email" />
+                <input type="text" name="phone" placeholder="Telefone">
+    
+                <textarea name="message" placeholder="Assunto"></textarea> <!-- Optional -->
+                <!-- If you want replyTo to be set to a specific email -->
+                <input type="hidden" name="replyTo" value="itachiziimf@gmail.com"> <!-- Optional -->
+                <!-- Specify @ as reply to value if you want it to be the customer's email -->
+                <input type="hidden" name="replyTo" value="@"> <!-- Optional -->
+                <!-- If you want the form to redirect to a specific URL after submission -->
+                <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/site-senai/cotato.html"><!-- Optional -->
+    
+                <input type="submit" value="enviar" onclick="meu()" />
+    
+            </form>
+            <script>
+                function meu() {
+                    alert("Formulário enviado com sucesso!");
+                    ;
+                    return false;
+    
+                };
+            </script>
+</div>
 
     </div>
 
