@@ -14,8 +14,6 @@
     <link rel="shortcut icon" href="favi/favicon.ico" type="image/x-icon">
 
     <style>
-        
-
         * {
             margin: 0;
             padding: 0;
@@ -33,7 +31,7 @@
 
         h1 {
             font-size: 18px;
-           
+
             margin-bottom: 5px;
             color: #066f0b;
 
@@ -41,7 +39,7 @@
 
         input[type="text"],
         textarea {
-            
+
             width: 90%;
             padding: 10px;
             margin-bottom: 9px;
@@ -64,11 +62,12 @@
         }
 
         input[type="submit"]:hover {
-            
+
             background-color: #0079fab4;
         }
 
         body {
+            background-color: #f8f8f8;
             display: flex;
 
         }
@@ -90,12 +89,12 @@
             background-color: rgb(255, 255, 255) !important;
             padding-bottom: 20px;
         }
-        .ctt{
-             
-            font-size: xx-large;
-          
-        }
 
+        .ctt {
+
+            font-size: xx-large;
+
+        }
     </style>
 
 
@@ -104,8 +103,8 @@
 </head>
 
 <body class=".container-fluid">
-     
-    
+
+
 
     <div class="oi">
         <section class="section page-header">
@@ -113,17 +112,16 @@
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="saibamais.html"> Saiba+</a>
                             </li>
                             <li class="nav-item">
@@ -134,7 +132,7 @@
                 </div>
             </nav>
         </section>
-        
+
         <section class="page-logo">
             <nav class="navbar bg-body-tertiary">
                 <div class="container">
@@ -143,45 +141,42 @@
                     </a>
                 </div>
             </nav>
-            
+
         </section>
 
-        <h1 class="ctt" style="text-align: center; ">CONTATO</h1>
+        <h1 class="ctt" style="text-align: center; font-family: Arial, Helvetica, sans-serif;">CONTATO</h1>
 
-        <div id="meuForm">
-            <form action="https://api.staticforms.xyz/submit" method="post" >
-                <!-- Replace with accessKey sent to your email -->
-                <input type="hidden" name="accessKey" value="bc4c36ec-5803-4148-b67b-b87591c6b5c9"> <!-- Required -->
-            
-                <!-- <h1>Seu Nome</h1> -->
-                <input type="text" name="name" placeholder="Nome"> <!-- Optional -->
-                <input type="text" name="email" placeholder="Email" />
-                <input type="text" name="phone" placeholder="Telefone">
-            
-                <textarea name="message"  placeholder="Assunto"></textarea> <!-- Optional -->
-                <!-- If you want replyTo to be set to a specific email -->
-                <input type="hidden" name="replyTo" value="itachiziimf@gmail.com"> <!-- Optional -->
-                <!-- Specify @ as reply to value if you want it to be the customer's email -->
-                <input type="hidden" name="replyTo" value="@"> <!-- Optional -->
-                <!-- If you want the form to redirect to a specific URL after submission -->
-                <input type="hidden" name="redirectTo" value="https://example.com/contact/success"> <!-- Optional -->
-                <input type="submit" value="enviar" />
-                
-            </form>
-        </div>
+        <form action="https://api.staticforms.xyz/submit" method="post">
+            <!-- Replace with accessKey sent to your email -->
+            <input type="hidden" name="accessKey" value="bc4c36ec-5803-4148-b67b-b87591c6b5c9"> <!-- Required -->
 
-    
-        
-    </script>
-        
+            <!-- <h1>Seu Nome</h1> -->
+            <input type="text" name="name" placeholder="Nome"> <!-- Optional -->
+            <input type="text" name="email" placeholder="Email" />
+            <input type="text" name="phone" placeholder="Telefone">
+
+            <textarea name="message" placeholder="Assunto"></textarea> <!-- Optional -->
+            <!-- If you want replyTo to be set to a specific email -->
+            <input type="hidden" name="replyTo" value="itachiziimf@gmail.com"> <!-- Optional -->
+            <!-- Specify @ as reply to value if you want it to be the customer's email -->
+            <input type="hidden" name="replyTo" value="@"> <!-- Optional -->
+            <!-- If you want the form to redirect to a specific URL after submission -->
+            <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/site-senai/cotato.html"><!-- Optional -->
+
+            <input type="submit" value="enviar" onclick="meu()" />
+
+        </form>
+        <script>
+            function meu() {
+                alert("Formulário enviado com sucesso!");
+                ;
+                return false;
+
+            };
+        </script>
+
     </div>
-    <div class="um">
-    </div>
-    
-    
-    
-    
-    </div>
-    
-    </html>
-    alert("Formulário enviado com sucesso!");
+
+
+</html>
+alert("Formulário enviado com sucesso!");
