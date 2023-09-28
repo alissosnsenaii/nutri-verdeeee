@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Para ícones FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Para ícones FontAwesome -->
     <title>Rodé com Onda</title>
     <style>
         /* style.css */
@@ -102,7 +103,7 @@
             padding: 0;
             font-family: Arial, sans-serif;
         }
-
+/* ---------------------FOOTER--------------------------- */
         .footer-ondulado-top {
             float: left;
             margin-bottom: -1px;
@@ -116,15 +117,29 @@
         }
 
         footer {
-            background-color: rgb(0, 243, 0);
+            background-color: #8dc53f;
             /* Define a mesma cor de fundo para o rodapé */
             color: white;
             padding: 20px;
-            
             clear: both;
             /* Garante que o rodapé fique abaixo da onda */
         }
-        
+
+        .footer-ondulado-top svg {
+
+            float: left;
+            margin-bottom: -1px;
+            display: block;
+            width: calc(148% + 1.3px);
+            height: 75px;
+
+        }
+
+        .footer-ondulado-top .shape-fill {
+
+            fill: #8DC53F;
+
+        }
     </style>
 
 </head>
@@ -252,7 +267,8 @@
     </main>
     <div class="footer">
         <div class="footer-ondulado-top">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
                 <path
                     d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
                     class="shape-fill" fill="darkgreen"></path>
@@ -260,22 +276,22 @@
         </div>
         <footer>
             <div class="container">
-                
-                    
-                    <div class="col-lg-4 col-md-6">
-                        <section class="widget widget-links widget-footer-links">
-                            <h3 class="widget-title">Links</h3>
-                            <ul>
-                                <li><a href="/loja/departamentos/">Departamentos / Categorias</a></li>
-                                <li><a href="/loja/combos/">Combos e Kits</a></li>
-                                <li><a href="/loja/ofertas-clube/">Ofertas Clube</a></li>
-                                <li><a href="/loja/fale-conosco/">Fale Conosco</a></li>
-                                <li class="hidden-on-mobile"><a href="/loja/trabalhe-conosco/">Trabalhe Conosco</a></li>
-                                <li><a href="/loja/faq/">Perguntas Frequentes</a></li>
-                            </ul>
-                        </section>
-                    </div>
-            
+
+
+                <div class="col-lg-4 col-md-6">
+                    <section class="widget widget-links widget-footer-links">
+                        <h3 class="widget-title">Links</h3>
+                        <ul>
+                            <li><a href="/loja/departamentos/">Departamentos / Categorias</a></li>
+                            <li><a href="/loja/combos/">Combos e Kits</a></li>
+                            <li><a href="/loja/ofertas-clube/">Ofertas Clube</a></li>
+                            <li><a href="/loja/fale-conosco/">Fale Conosco</a></li>
+                            <li class="hidden-on-mobile"><a href="/loja/trabalhe-conosco/">Trabalhe Conosco</a></li>
+                            <li><a href="/loja/faq/">Perguntas Frequentes</a></li>
+                        </ul>
+                    </section>
+                </div>
+
             </div>
         </footer>
     </div>
