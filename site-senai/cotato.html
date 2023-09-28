@@ -105,9 +105,44 @@
 
         }
 
-        
-        
-        
+        /* ---------------------FOOTER--------------------------- */
+        .footer-ondulado-top {
+            float: left;
+            margin-bottom: -1px;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+            transform: rotate(180deg);
+
+
+        }
+
+        footer {
+            background-color: #066f0b;
+            /* Define a mesma cor de fundo para o rodapé */
+            color: white;
+            padding: 20px;
+            clear: both;
+            /* Garante que o rodapé fique abaixo da onda */
+            text-align: center;
+        }
+
+        .footer-ondulado-top svg {
+
+            float: left;
+            margin-bottom: -1px;
+            display: block;
+            width: calc(148% + 1.3px);
+            height: 75px;
+
+        }
+
+        .footer-ondulado-top .shape-fill {
+
+            fill: #066f0b;
+
+        }
     </style>
 
 
@@ -116,7 +151,7 @@
 </head>
 
 <body class=".container-fluid">
-
+ 
 
 
     <div class="oi">
@@ -157,7 +192,7 @@
         </section>
         <!-- ----------------------------header---------------------------------------------- -->
         <div class="body2">
-           
+
 
             <h1 class="ctt" style="text-align: center; font-family: Arial, Helvetica, sans-serif;">
                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="95" fill="currentColor"
@@ -168,29 +203,29 @@
                 CONTATO
             </h1>
 
-            
-                <form action="https://api.staticforms.xyz/submit" method="post">
-                    <!-- Replace with accessKey sent to your email -->
-                    <input type="hidden" name="accessKey" value="ef207bb5-d990-43a4-ba70-55f50a1b3327"> <!-- Required -->
-                    <h1>Nome</h1>
-                    <input type="text" name="name" placeholder=" Digite seu nome" > <!-- Optional -->
-                    <h1>E-mail</h1>
-                    <input type="text" name="email" placeholder=" Digite seu e-mail" />
-                    <h1>Telefone</h1>
-                    <input type="text" name="phone" placeholder=" (XX) X XXXX-XXXX">
-                    <h1>Mensagem</h1>
-                    <textarea name="message" placeholder=" Eu gostaria de..."></textarea> <!-- Optional -->
-                    <!-- If you want replyTo to be set to a specific email -->
-                    <input type="hidden" name="replyTo" value="nutriverde96@gmail.com"> <!-- Optional -->
-                    <!-- Specify @ as reply to value if you want it to be the customer's email -->
-                    <input type="hidden" name="replyTo" value="@"> <!-- Optional -->
-                    <!-- If you want the form to redirect to a specific URL after submission -->
-                    <input type="hidden" name="redirectTo"
-                        value="http://127.0.0.1:5500/site-senai/cotato.html"><!-- Optional -->
-                    <input type="submit" value="enviar" onclick="meu()" />
-                </form>
-            
-            
+
+            <form action="https://api.staticforms.xyz/submit" method="post">
+                <!-- Replace with accessKey sent to your email -->
+                <input type="hidden" name="accessKey" value="ef207bb5-d990-43a4-ba70-55f50a1b3327"> <!-- Required -->
+                <h1>Nome</h1>
+                <input type="text" name="name" placeholder=" Digite seu nome"> <!-- Optional -->
+                <h1>E-mail</h1>
+                <input type="text" name="email" placeholder=" Digite seu e-mail" />
+                <h1>Telefone</h1>
+                <input type="text" name="phone" placeholder=" (XX) X XXXX-XXXX">
+                <h1>Mensagem</h1>
+                <textarea name="message" placeholder=" Eu gostaria de..."></textarea> <!-- Optional -->
+                <!-- If you want replyTo to be set to a specific email -->
+                <input type="hidden" name="replyTo" value="nutriverde96@gmail.com"> <!-- Optional -->
+                <!-- Specify @ as reply to value if you want it to be the customer's email -->
+                <input type="hidden" name="replyTo" value="@"> <!-- Optional -->
+                <!-- If you want the form to redirect to a specific URL after submission -->
+                <input type="hidden" name="redirectTo"
+                    value="http://127.0.0.1:5500/site-senai/cotato.html"><!-- Optional -->
+                <input type="submit" value="enviar" onclick="meu()" />
+            </form>
+
+
 
             <script>
                 function meu() {
@@ -206,78 +241,23 @@
 
         </div>
 
-
         <!-- ----------------------- footer---------------------------------- -->
-        
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <section class="widget">
-                        <h3 class="widget-title">Atendimento</h3>
-
-                        <p>
-                            <i class="icon-phone"></i>
-                            (28) 99936-1170
-                        </p>
-
-                        <p class="no-print">
-                            <i class="fab fa-whatsapp"></i>
-                            <a href="https://api.whatsapp.com/send?phone=5528999361170" target="_blank"
-                                style="color: #229A00;">(28) 99936-1170</a>
-                        </p>
-
-
-                        <p>
-                            <i class="icon-mail"></i>
-                            <a class="text-dark" href="mailto:folhaverdenfe@gmail.com"
-                                style="color: #229A00;">folhaverdenfe@gmail.com</a>
-                        </p>
-
-
-                        <p>
-                            <i class="icon-clock"></i>
-                            Horário de Atendimento:
-                        </p>
-
-                        <ul class="list-unstyled text-sm" style="margin-left: 30px;">
-                            <li>
-                                <p>Segunda-Sexta: 08:00 - 18:00<br>
-                                    Sábado: 08:30 - 18:00</p>
-                            </li>
-                        </ul>
-
-                    </section>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <section class="widget widget-links widget-footer-links">
-                        <h3 class="widget-title">Links</h3>
-                        <ul>
-                            <li>
-                                <a href="/loja/departamentos/">Departamentos / Categorias</a>
-                            </li>
-                            <li>
-                                <a href="/loja/combos/">Combos e Kits</a>
-                            </li>
-                            <li>
-                                <a href="/loja/ofertas-clube/">Ofertas Clube</a>
-                            </li>
-                            <li>
-                                <a href="/loja/fale-conosco/">Fale Conosco</a>
-                            </li>
-                            <li class="hidden-on-mobile">
-                                <a href="/loja/trabalhe-conosco/">Trabalhe Conosco</a>
-                            </li>
-                            <li>
-                                <a href="/loja/faq/">Perguntas Frequentes</a>
-                            </li>
-                        </ul>
-                    </section>
-                </div>
-
+        <div class="footer">
+            <div class="footer-ondulado-top">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                        class="shape-fill" fill="darkgreen"></path>
+                </svg>
             </div>
-
-
+            <footer>
+                
+            </footer>
+            
         </div>
+
+
 
 
 
@@ -285,4 +265,5 @@
 
 
 
+</body>
 </html>
