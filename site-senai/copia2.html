@@ -57,7 +57,7 @@
             fill: #066f0b;
 
         }
-        
+
         body {
             margin: 0;
             padding: 0;
@@ -182,9 +182,37 @@
             color: #007bff;
             /* Altere para a cor desejada no hover */
         }
-    
 
-        
+        /* -----------------------pop-up-------------------------------- */
+        .popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        .popup-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
     </style>
 </head>
 
@@ -273,9 +301,10 @@
                                 rica em fibras que auxiliam e facilitam a digestão e o funcionamento do intestino.
                             </p>
                             <div class="d-flex justify-content-center">
-                                <a href="#" class="card-link"
-                                    style="color: #229A00; text-decoration: none;">Receitas</a>
+                                <a href="#" class="card-link" style="color: #229A00; text-decoration: none;"
+                                    data-toggle="popup" data-target="popup1">Receitas</a>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -289,9 +318,10 @@
                                 amargo, e
                                 capaz de fornecer vitaminas que fazem muito bem para nossa saúde.
                             </p>
+
                             <div class="d-flex justify-content-center">
-                                <a href="#" class="card-link"
-                                    style="color: #229A00; text-decoration: none;">Receitas</a>
+                                <a href="#" class="card-link" style="color: #229A00; text-decoration: none;"
+                                    data-toggle="popup" data-target="popup2">Receitas</a>
                             </div>
                         </div>
                     </div>
@@ -306,9 +336,10 @@
                                 especialmente em
                                 países tropicais da Ásia e na cozinha italiana com produtos naturais.
                             </p>
+
                             <div class="d-flex justify-content-center">
-                                <a href="#" class="card-link"
-                                    style="color: #229A00; text-decoration: none;">Receitas</a>
+                                <a href="#" class="card-link" style="color: #229A00; text-decoration: none;"
+                                    data-toggle="popup" data-target="popup3">Receitas</a>
                             </div>
                         </div>
                     </div>
@@ -323,9 +354,10 @@
                                 sabor da
                                 comida, é utilizada como erva medicinal, graças às suas propriedades nutricionais.
                             </p>
+
                             <div class="d-flex justify-content-center">
-                                <a href="#" class="card-link"
-                                    style="color: #229A00; text-decoration: none;">Receitas</a>
+                                <a href="#" class="card-link" style="color: #229A00; text-decoration: none;"
+                                    data-toggle="popup" data-target="popup4">Receitas</a>
                             </div>
                         </div>
                     </div>
@@ -340,15 +372,19 @@
                                 por sua textura suave
                                 e sabor ligeiramente adocicado em comparação com a couve tradicional.
                             </p>
+
                             <div class="d-flex justify-content-center">
-                                <a href="#" class="card-link"
-                                    style="color: #229A00; text-decoration: none;">Receitas</a>
+                                <a href="#" class="card-link" style="color: #229A00; text-decoration: none;"
+                                    data-toggle="popup" data-target="popup5">Receitas</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+
+
         <!-------------------------------------------------------- Segunda Postagem ------------------------------------------------------>
         <div class="blog-2"
             style="display: flex; flex-direction: column; padding: 20px; margin-bottom: 20px; background-color: #f8f8f8; border-radius: 15px;">
@@ -410,9 +446,10 @@
                                 Folhas mais resistentes e possui uma textura mais robusta em comparação com a alface
                                 mimosa.
                             </p>
+
                             <div class="d-flex justify-content-center">
-                                <a href="#" class="card-link"
-                                    style="color: #229A00; text-decoration: none;">Receitas</a>
+                                <a href="#" class="card-link" style="color: #229A00; text-decoration: none;"
+                                    data-toggle="popup" data-target="popup6">Receitas</a>
                             </div>
                         </div>
                     </div>
@@ -425,9 +462,10 @@
                             <p class="card-text">
                                 Suas folhas tendem a ser mais crocantes e têm uma textura ligeiramente mais frágil.
                             </p>
+
                             <div class="d-flex justify-content-center">
-                                <a href="#" class="card-link"
-                                    style="color: #229A00; text-decoration: none;">Receitas</a>
+                                <a href="#" class="card-link" style="color: #229A00; text-decoration: none;"
+                                    data-toggle="popup" data-target="popup7">Receitas</a>
                             </div>
                         </div>
                     </div>
@@ -442,9 +480,10 @@
                                 sabor
                                 ligeiramente amargo.
                             </p>
+
                             <div class="d-flex justify-content-center">
-                                <a href="#" class="card-link"
-                                    style="color: #229A00; text-decoration: none;">Receitas</a>
+                                <a href="#" class="card-link" style="color: #229A00; text-decoration: none;"
+                                    data-toggle="popup" data-target="popup8">Receitas</a>
                             </div>
                         </div>
                     </div>
@@ -458,9 +497,10 @@
                                 Suas folhas sâo lisas e macias. Possui um sabor suave e é muito usada em saladas e
                                 sanduíches.
                             </p>
+
                             <div class="d-flex justify-content-center">
-                                <a href="#" class="card-link"
-                                    style="color: #229A00; text-decoration: none;">Receitas</a>
+                                <a href="#" class="card-link" style="color: #229A00; text-decoration: none;"
+                                    data-toggle="popup" data-target="popup9">Receitas</a>
                             </div>
                         </div>
                     </div>
@@ -474,9 +514,10 @@
                                 refere a variedades de alface, cultivados de forma mais cuidadosa, isso pode incluir
                                 tipos diferentes de alface.
                             </p>
+
                             <div class="d-flex justify-content-center">
-                                <a href="#" class="card-link"
-                                    style="color: #229A00; text-decoration: none;">Receitas</a>
+                                <a href="#" class="card-link" style="color: #229A00; text-decoration: none;"
+                                    data-toggle="popup" data-target="popup10">Receitas</a>
                             </div>
                         </div>
                     </div>
@@ -573,6 +614,242 @@
         </footer>
 
     </div>
+    <!-- ----------------------------------pop-up---------------------------------- -->
+
+    <!-- Pop-up -->
+    <div id="popup1" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('popup1')">X</span>
+
+            <h2>Receita com rucula</h2>
+            <br>
+            <p id="popupContent1">
+
+                1 maço de rúcula
+                <br>
+                <br>
+                1 unidade de tomate
+                <br>
+                <br>
+                1 unidade de cebola
+                <br>
+                <br>
+                1 unidade de limão – suco da fruta
+                <br>
+                <br>
+                sal, azeite e pimenta moída na hora a gosto
+                <br>
+                <br>
+            </p>
+            <br>
+        </div>
+    </div>
+    <div id="popup2" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('popup2')">X</span>
+            <h2>Receita com Agrião</h2>
+            <br>
+            <p id="popupContent2">
+                1 xícara de agrião picado
+                <br>
+                <br>
+                1/2xícara de fécula de batata
+                <br>
+                <br>
+                2 ovos batidos
+                <br>
+                <br>
+                1 colher de café de fermento
+                <br>
+                <br>
+                Sal a gosto
+                <br>
+                <br>
+                Pimenta-do-reino a gosto
+                <br>
+                <br>
+                Azeite a gosto
+                <br>
+                <br>
+            </p>
+            <br>
+            <h2>Bolinho de agrião</h2>
+        </div>
+    </div>
+    <div id="popup3" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('popup3')">X</span>
+            <h2>Receita com Manjericão</h2>
+            <br>
+            <p id="popupContent2">
+                <br>
+                <br>
+                20 folhas de rúcula
+                <br>
+                <br>
+                3 unidades de mussarela de búfala (fatiadas)
+                <br>
+                <br>
+                5 rodelas de tomate fresco
+                <br>
+                <br>
+                manjericão
+                <br>
+                <br>
+                5 folhas de manjericão
+                <br>
+                <br>
+            </p>
+            <br>
+        </div>
+    </div>
+    <div id="popup4" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('popup4')">X</span>
+            <h2>Receita com Salsa </h2>
+            <br>
+            <p id="popupContent2">
+                ½ xícara de salsa (salsinha) fresca
+                <br><br>
+                1 dente de alho
+                <br><br>
+                ½ xícara de azeite de oliva
+                <br><br>
+                1 pitada de sal
+                <br><br>
+            </p>
+            <h2>Molho de salsa verde</h2>
+            
+        </div>
+    </div>
+    <div id="popup5" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('popup5')">X</span>
+            <h2>RECEITA</h2>
+            <p id="popupContent2">Informações sobre Mini-Couve.</p>
+        </div>
+    </div>
+    <div id="popup6" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('popup6')">X</span>
+            <h2>RECEITA</h2>
+            <p id="popupContent2">Informações sobre Mini-Couve.</p>
+        </div>
+    </div>
+    <div id="popup7" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('popup7')">X</span>
+            <h2>RECEITA</h2>
+            <p id="popupContent2">Informações sobre Mini-Couve.</p>
+        </div>
+    </div>
+    <div id="popup8" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('popup8')">X</span>
+            <h2>RECEITA</h2>
+            <p id="popupContent2">Informações sobre Mini-Couve.</p>
+        </div>
+    </div>
+    <div id="popup9" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('popup9')">X</span>
+            <h2>RECEITA</h2>
+            <p id="popupContent2">Informações sobre Mini-Couve.</p>
+        </div>
+    </div>
+    <div id="popup10" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('popup10')">X</span>
+            <h2>RECEITA</h2>
+            <p id="popupContent2">Informações sobre Mini-Couve.</p>
+        </div>
+    </div>
+
+    <script>
+        // Função para abrir o pop-up
+        function openPopup(popupId) {
+            document.getElementById(popupId).style.display = "block";
+        }
+
+        // Função para fechar o pop-up
+        function closePopup(popupId) {
+            document.getElementById(popupId).style.display = "none";
+        }
+
+        // Adicione o evento de clique para todos os links de "Detalhes"
+        const cardLinks = document.querySelectorAll('[data-toggle="popup"]');
+        cardLinks.forEach((link) => {
+            link.addEventListener("click", function () {
+                const targetId = this.getAttribute("data-target");
+                openPopup(targetId);
+            });
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 
 </html>
