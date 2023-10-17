@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pop-up com Imagem</title>
+    <style>
+        /* Estilo para o pop-up */
+        .popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 1;
+        }
+
+        .popup-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Estilo para fechar o pop-up */
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="openPopup">Abrir Pop-up</button>
+
+    <!-- O pop-up -->
+    <div id="myPopup" class="popup">
+        <div class="popup-content">
+            <span class="close" id="closePopup">&times;</span>
+            <img src="mini-couve.png" alt="Imagem do Pop-up">
+        </div>
+    </div>
+
+    <script>
+        // JavaScript para controlar o pop-up
+        const openButton = document.getElementById("openPopup");
+        const popup = document.getElementById("myPopup");
+        const closeButton = document.getElementById("closePopup");
+
+        openButton.addEventListener("click", function () {
+            popup.style.display = "block";
+        });
+
+        closeButton.addEventListener("click", function () {
+            popup.style.display = "none";
+        });
+    </script>
+</body>
+
+</html>
