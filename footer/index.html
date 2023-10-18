@@ -2,8 +2,8 @@
 <html>
 
 <head>
-    <title>Pop-up com Imagem</title>
-    <style>
+    <title>Receita</title>
+       <style>
         /* Estilo para o pop-up */
         .popup {
             display: none;
@@ -38,29 +38,49 @@
 </head>
 
 <body>
-    <button id="openPopup">Abrir Pop-up</button>
+    <button onclick="abrirPopup()">Ver Receita</button>
 
-    <!-- O pop-up -->
-    <div id="myPopup" class="popup">
+    <div id="popup" class="popup">
         <div class="popup-content">
-            <span class="close" id="closePopup">&times;</span>
-            <img src="mini-couve.png" alt="Imagem do Pop-up">
+            <span class="close" onclick="fecharPopup()">X</span>
+            <h1 id="titulo-receita-popup"></h1>
+            <h2>Ingredientes:</h2>
+            <div id="ingredientes-receita-popup"></div>
+            <h2>Modo de Preparo:</h2>
+            <p id="modo-de-preparo-popup"></p>
         </div>
     </div>
 
     <script>
-        // JavaScript para controlar o pop-up
-        const openButton = document.getElementById("openPopup");
-        const popup = document.getElementById("myPopup");
-        const closeButton = document.getElementById("closePopup");
+        const receita = {
+            titulo: "Salada de Frutas",
+            ingredientes: [
+                "1 maçã",
+                "1 banana",
+                "1 laranja",
+                "1 xícara de morangos",
+                "1 colher de sopa de mel",
+                "Suco de meio limão"
+            ],
+            modoDePreparo: "1. Descasque e corte todas as frutas em pedaços.\n2. Em uma tigela, misture as frutas.\n3. Regue com o mel e suco de limão.\n4. Misture bem e sirva."
+        };
 
-        openButton.addEventListener("click", function () {
-            popup.style.display = "block";
-        });
+        function exibirReceita() {
+            const tituloElement = document.getElementById("titulo-receita");
+            const ingredientesElement = document.getElementById("ingredientes-receita");
+            const modoDePreparoElement = document.getElementById("modo-de-preparo");
 
-        closeButton.addEventListener("click", function () {
-            popup.style.display = "none";
-        });
+            tituloElement.textContent = receita.titulo;
+
+            const listaIngredientes = receita.ingredientes.map(ingrediente => `<li>${ingrediente}</li>`).join('');
+            ingredientesElement.innerHTML = `<ul>${listaIngredientes}</ul>`;
+
+            modoDePreparoElement.textContent = receita.modoDePreparo;
+        }
+
+        // Chame a função para exibir a receita quando a página for carregada
+        window.addEventListener("load", exibirReceita);
+
     </script>
 </body>
 

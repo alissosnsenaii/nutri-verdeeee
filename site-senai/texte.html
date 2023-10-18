@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+    <form action="https://api.staticforms.xyz/submit" method="post">
+        <!-- Replace with accessKey sent to your email -->
+        <input type="hidden" name="accessKey" value="ef207bb5-d990-43a4-ba70-55f50a1b3327"> <!-- Required -->
+        <h1>Nome</h1>
+        <input type="text" name="name" placeholder=" Digite seu nome"> <!-- Optional -->
+        <h1>E-mail</h1>
+        <input type="text" name="email" placeholder=" Digite seu e-mail" />
+        <h1>Telefone</h1>
+        <input type="text" name="phone" placeholder=" (XX) X XXXX-XXXX">
+        <h1>Mensagem</h1>
+        <textarea name="message" placeholder=" Eu gostaria de..."></textarea> <!-- Optional -->
+        <!-- If you want replyTo to be set to a specific email -->
+        <input type="hidden" name="replyTo" value="nutriverde96@gmail.com"> <!-- Optional -->
+        <!-- Specify @ as reply to value if you want it to be the customer's email -->
+        <input type="hidden" name="replyTo" value="@"> <!-- Optional -->
+        <!-- If you want the form to redirect to a specific URL after submission -->
+        <input type="hidden" name="redirectTo"
+            value="http://127.0.0.1:5500/site-senai/cotato.html"><!-- Optional -->
+        <input type="submit" value="enviar" onclick="meu()" />
+    </form>
+
+
+</body>
+</html>
