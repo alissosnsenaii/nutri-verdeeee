@@ -1,87 +1,40 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <title>Receita</title>
-       <style>
-        /* Estilo para o pop-up */
-        .popup {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.7);
-            z-index: 1;
-        }
-
-        .popup-content {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: #fff;
-            padding: 20px;
-            border: 1px solid #ccc;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        }
-
-        /* Estilo para fechar o pop-up */
-        .close {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            cursor: pointer;
-        }
-    </style>
-</head>
-
-<body>
-    <button onclick="abrirPopup()">Ver Receita</button>
-
-    <div id="popup" class="popup">
-        <div class="popup-content">
-            <span class="close" onclick="fecharPopup()">X</span>
-            <h1 id="titulo-receita-popup"></h1>
-            <h2>Ingredientes:</h2>
-            <div id="ingredientes-receita-popup"></div>
-            <h2>Modo de Preparo:</h2>
-            <p id="modo-de-preparo-popup"></p>
-        </div>
+<form action="seuscript.php" method="post">
+    <div class="form-group">
+        <label for="nome">Nome:</label>
+        <input type="text" class="form-control" id="nome" name="nome" placeholder="Seu Nome">
     </div>
 
-    <script>
-        const receita = {
-            titulo: "Salada de Frutas",
-            ingredientes: [
-                "1 maçã",
-                "1 banana",
-                "1 laranja",
-                "1 xícara de morangos",
-                "1 colher de sopa de mel",
-                "Suco de meio limão"
-            ],
-            modoDePreparo: "1. Descasque e corte todas as frutas em pedaços.\n2. Em uma tigela, misture as frutas.\n3. Regue com o mel e suco de limão.\n4. Misture bem e sirva."
-        };
+    <div class="form-group" style="margin-top: 10px;">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="seuemail@example.com">
+    </div>
 
-        function exibirReceita() {
-            const tituloElement = document.getElementById("titulo-receita");
-            const ingredientesElement = document.getElementById("ingredientes-receita");
-            const modoDePreparoElement = document.getElementById("modo-de-preparo");
+    <div class="form-group" style="margin-top: 10px;">
+        <label for="mensagem">Mensagem:</label>
+        <textarea class="form-control" id="mensagem" name="mensagem" rows="4" placeholder="Digite sua mensagem aqui"></textarea>
+    </div>
 
-            tituloElement.textContent = receita.titulo;
+    <button type="submit" class="btn btn-primary" style="margin-top: 10px;">Enviar</button>
+</form> 
+<SCript>
+    <?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $nome = $_POST["nome"];
+    $email = $_POST["email"];
+    $mensagem = $_POST["mensagem"];
 
-            const listaIngredientes = receita.ingredientes.map(ingrediente => `<li>${ingrediente}</li>`).join('');
-            ingredientesElement.innerHTML = `<ul>${listaIngredientes}</ul>`;
+    $para = "alissonfragoso123@gmail.com";
+    $assunto = "Nova mensagem de contato de $nome";
+    $corpo = "Nome: $nome\n";
+    $corpo .= "Email: $email\n";
+    $corpo .= "Mensagem:\n$mensagem";
 
-            modoDePreparoElement.textContent = receita.modoDePreparo;
-        }
+    mail($para, $assunto, $corpo);
 
-        // Chame a função para exibir a receita quando a página for carregada
-        window.addEventListener("load", exibirReceita);
+    // Redirecione o usuário para uma página de agradecimento ou outra ação após o envio do e-mail
+    header("Location: obrigado.html");
+}
+?>
 
-    </script>
-</body>
+</SCript>
 
-</html>
