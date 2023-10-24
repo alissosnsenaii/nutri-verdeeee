@@ -137,67 +137,45 @@
         </nav>
 
         <!-- Conteúdo da Página de Contato -->
-        <div class="row">
-            <!-- Formulário à direita -->
 
-            <div class="col-md-6 mb-4 text-center p-5">
-                <h1 style="font-family: 'Courier New'; color: black;">Informações de Contato</h1>
-                <p><strong>Endereço:</strong> R. Orvalho da Manhã - Parque Sonhos Dourados, Araguaína - TO,
-                    77818-802</p>
-                <p><strong>Telefone:</strong> 63 992095449</p>
-                <p><strong>Email:</strong> contato@seusite.com</p>
-                <div class="social-icons mt-3">
-                    <a href="https://www.facebook.com/nutriverdehidroponicosespeciais"
-                        class="btn btn-primary btn-social  mb-2">
-                        <i class="fab fa-facebook"></i> Facebook
-                    </a>
-                    <a href="https://www.instagram.com/nutriverdehidroponia/" class="btn btn-danger btn-social mb-2">
-                        <i class="fab fa-instagram"></i> Instagram
-                    </a>
-                    <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5563992095449"
-                        class="btn btn-success btn-social mb-2">
-                        <i class="fab fa-whatsapp"></i> WhatsApp
-                    </a>
+
+
+
+        <div class="container">
+            <div class="row">
+                <!-- Formulário à esquerda -->
+                <div class="col-md-6 mb-4">
+                    <h1 class="mb-4" style="font-family: 'Courier New';">Fale Conosco</h1>
+                    <form action="https://api.staticforms.xyz/submit" method="post">
+                        <input type="hidden" name="accessKey" value="ef207bb5-d990-43a4-ba70-55f50a1b3327">
+                        <div class="form-group">
+                            <label for="nome">Nome:</label>
+                            <input type="text" class="form-control" id="nome" name="name" placeholder="Seu Nome">
+                        </div>
+                        <div class="form-group" style="margin-top: 10px;">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="seuemail@example.com">
+                        </div>
+                        <div class="form-group" style="margin-top: 10px;">
+                            <label for="mensagem">Mensagem:</label>
+                            <textarea class="form-control" id="mensagem" name="message" rows="4" placeholder="Digite sua mensagem aqui"></textarea>
+                        </div>
+                        <input type="hidden" name="replyTo" value="nutriverde96@gmail.com">
+                        <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/contato-ian.html">
+                        <button type="submit" value="enviar" class="btn btn-primary" style="margin-top: 10px;">Enviar</button>
+                    </form>
+                </div>
+        
+                <!-- Mapa à direita -->
+                <div class="col-md-6 mb-4">
+                    <h3 style="text-align: center; font-family: 'Courier New';">Nossa localização</h3>
+                    <div class="embed-responsive embed-responsive-16by9 custom-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2001.3516724730289!2d-48.23409062108098!3d-7.183591961463728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92d90d16c8a891e3%3A0xa525180574f15b5f!2sNutriVerde%20Cultivos%20Hidrop%C3%B4nicos!5e1!3m2!1spt-BR!2sbr!4v1697068572061!5m2!1spt-BR!2sbr" width="100%" height="100%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-6 mb-4">
-                <h1 class="mb-4" style="font-family: 'Courier New';">Fale Conosco</h1>
-                <form action="https://api.staticforms.xyz/submit" method="post">
-                    <input type="hidden" name="accessKey" value="ef207bb5-d990-43a4-ba70-55f50a1b3327">
-                    <div class="form-group">
-                        <label for="nome">Nome:</label>
-                        <input type="text" class="form-control" id="nome" name="name" placeholder="Seu Nome">
-                    </div>
-                    <div class="form-group" style="margin-top: 10px;">
-                        <label for="email">Email:</label>
-                        <input type="email" class="form-control" id="email" name="email"
-                            placeholder="seuemail@example.com">
-                    </div>
-                    <div class="form-group" style="margin-top: 10px;">
-                        <label for="mensagem">Mensagem:</label>
-                        <textarea class="form-control" id="mensagem" name="message" rows="4"
-                            placeholder="Digite sua mensagem aqui"></textarea>
-                    </div>
-                    <input type="hidden" name="replyTo" value="nutriverde96@gmail.com">
-                    <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/contato-ian.html">
-                    <button type="submit" value="enviar" class="btn btn-primary"
-                        style="margin-top: 10px;">Enviar</button>
-                </form>
-            </div>
         </div>
-    </div>
-    <!--Mapa Incorporado (Exemplo)  -->
-    <div class="container-fluid mt-4 text-center">
-            <h3 >Localização</h3>
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2001.3516724730289!2d-48.23409062108098!3d-7.183591961463728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92d90d16c8a891e3%3A0xa525180574f15b5f!2sNutriVerde%20Cultivos%20Hidrop%C3%B4nicos!5e1!3m2!1spt-BR!2sbr!4v1697068572061!5m2!1spt-BR!2sbr"
-                    width="" height="" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </div>
-
-
+        
 
     <!-- Rodapé -->
     <div class="aviso-rodape ">
